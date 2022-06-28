@@ -1,7 +1,7 @@
 function App() {
   return (
     <div>
-      Pokemon Gotta Catch Em All!!!
+      Pokemon Gotta Catch Em All
     </div>
   );
 }
