@@ -1,7 +1,7 @@
 function App() {
   return (
     <div>
-      Pokemon Frontend
+      Pokemon Gotta Catch Em All!
     </div>
   );
 }
