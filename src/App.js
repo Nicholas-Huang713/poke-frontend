@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div>
-      <h1>Pokemon Cards!</h1>
+      <h1>Hello Pokemon Cards!</h1>
       {apiMsg}
     </div>
   );
