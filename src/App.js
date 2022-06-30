@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const checkApiRoute = async () => {
       try {
-        const resp = await axios(`${baseUrl}/`);
+        const resp = await axios(`${baseUrl}/api`);
         console.log(resp.data.msg)
         setApiMsg(resp.data.msg);
       } catch (e) {
