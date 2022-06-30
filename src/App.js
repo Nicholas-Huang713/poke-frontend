@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const checkApiRoute = async () => {
       try {
-        const resp = await axios(`${baseUrl}/`);
+        const resp = await axios(`${baseUrl}/api`);
         setApiMsg(resp.data.msg);
       } catch (e) {
         setApiMsg("Oops, something went wrong...")
