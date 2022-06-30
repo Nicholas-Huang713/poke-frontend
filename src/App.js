@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function App() {
   const [apiMsg, setApiMsg] = useState("");
-  const baseUrl = "http://localhost:3000";
+  const baseUrl = "http://localhost:5000";
 
   useEffect(() => {
     const checkApiRoute = async () => {
