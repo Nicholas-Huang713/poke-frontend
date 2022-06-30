@@ -3,12 +3,13 @@ import axios from 'axios';
 
 function App() {
   const [apiMsg, setApiMsg] = useState("");
-  const baseUrl = "http://localhost:5000";
+  // const baseUrl = "http://localhost:5000";
 
   useEffect(() => {
     const checkApiRoute = async () => {
       try {
-        const resp = await axios(`${baseUrl}/api`);
+        const resp = await axios(`/api`);
+        // const resp = await axios(`${baseUrl}/api`);
         setApiMsg(resp.data.msg);
       } catch (e) {
         setApiMsg("Oops, something went wrong...")
