@@ -9,7 +9,6 @@ function App() {
     const checkApiRoute = async () => {
       try {
         const resp = await axios(`${baseUrl}/`);
-        console.log(resp.data.msg)
         setApiMsg(resp.data.msg);
       } catch (e) {
         setApiMsg("Oops, something went wrong...")
