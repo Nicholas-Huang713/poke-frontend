@@ -16,7 +16,7 @@ function App() {
       }
     }
     checkApiRoute();
-  }, []);
+  }, [apiUrl]);
 
   return (
     <div>
