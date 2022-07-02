@@ -22,7 +22,7 @@ function App() {
     <div>
       <h1>Hello Pokemon Cards!</h1>
       <ul>
-        {userList.map((user) => (
+        {userList.length > 0 && userList.map((user) => (
           <li>
             {user.firstname} - {user.lastname} - {user._id}
           </li>
