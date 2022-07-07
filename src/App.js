@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react';
 import axios from 'axios';
 
 function App() {
-  const [userList, setUserList] = useState([]);
+  // const [userList, setUserList] = useState([]);
   const apiUrl = process.env.REACT_APP_API_URL;
   useEffect(() => {
     const checkApiRoute = async () => {
@@ -10,9 +10,10 @@ function App() {
         // const resp = await axios(`/api`);
         const resp = await axios(`${apiUrl}/`);
         console.log(resp.data)
-        setUserList(resp.data);
+        // setUserList(resp.data);
       } catch (e) {
-        setUserList("Oops, something went wrong...")
+        // setUserList("Oops, something went wrong...")
+        console.log(error)
       }
     }
     checkApiRoute();
