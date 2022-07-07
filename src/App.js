@@ -13,7 +13,7 @@ function App() {
         // setUserList(resp.data);
       } catch (e) {
         // setUserList("Oops, something went wrong...")
-        console.log(error)
+        console.log("error")
       }
     }
     checkApiRoute();
