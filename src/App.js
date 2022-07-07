@@ -8,7 +8,7 @@ function App() {
     const checkApiRoute = async () => {
       try {
         // const resp = await axios(`/api`);
-        const resp = await axios(`${apiUrl}/users`);
+        const resp = await axios(`${apiUrl}/`);
         console.log(resp.data)
         setUserList(resp.data);
       } catch (e) {
@@ -21,14 +21,14 @@ function App() {
   return (
     <div>
       <h1>Hello Pokemon Cards!</h1>
-      <ul>
+      {/* <ul>
         {userList.length > 0 && userList.map((user) => (
           <li>
             {user.firstname} - {user.lastname} - {user._id}
           </li>
         ))}
 
-      </ul>
+      </ul> */}
     </div>
   );
 }
