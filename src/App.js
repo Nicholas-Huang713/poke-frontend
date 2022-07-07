@@ -5,6 +5,7 @@ import axios from 'axios';
 function App() {
   // const [userList, setUserList] = useState([]);
   const apiUrl = process.env.REACT_APP_API_URL;
+  console.log(process.env.NODE_ENV)
   useEffect(() => {
     const checkApiRoute = async () => {
       try {
